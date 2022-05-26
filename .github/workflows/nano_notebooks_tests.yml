@@ -4,9 +4,9 @@ name: Nano Unit Tests for Notebooks
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ test-workflow ]
   pull_request:
-    branches: [ main ]
+    branches: [ test-workflow ]
     paths:
       - 'python/nano/**'
       - '.github/workflows/nano_notebooks_tests.yml'
