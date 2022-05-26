@@ -74,4 +74,4 @@ jobs:
           $CONDA/bin/conda remove -n notebooks-infer-pytorch --all
         env:
           ANALYTICS_ZOO_ROOT: ${{ github.workspace }}
-      
+          FIT_EPOCHS: 2
