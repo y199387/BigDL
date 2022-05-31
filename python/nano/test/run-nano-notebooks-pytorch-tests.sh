@@ -14,7 +14,7 @@ set -e
 # train_notebooks = "${PYTORCH_NANO_NOTEBOOKS_DIR}/cifar10/nano-trainer-example.ipynb \
 #                    ${PYTORCH_NANO_NOTEBOOKS_DIR}/test-dataset/test.ipynb "
 train_notebooks="${PYTORCH_NANO_NOTEBOOKS_DIR}/cifar10/nano-trainer-example.ipynb "
-inference_notebooks="${PYTORCH_NANO_NOTEBOOKS_DIR}/cifar10/notebooks/nano-inference-example.ipynb "
+inference_notebooks="${PYTORCH_NANO_NOTEBOOKS_DIR}/cifar10/nano-inference-example.ipynb "
 
 function read_dir() {
 for file in `ls $1`
