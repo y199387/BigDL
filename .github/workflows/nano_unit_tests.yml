@@ -4,7 +4,7 @@ name: Nano Unit Tests
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ add-nano-ipex-unit-test ]
   pull_request:
     branches: [ main ]
     paths:
@@ -190,7 +190,7 @@ jobs:
           pip install pytest
           if [ ! -z "${{matrix.pytorch-version}}" ]; then
             requirements=(${{matrix.pytorch-version}})
-            pip install ${{requirements[0] requirements[1]}}
+            pip install ${{requirements[0]}} ${{requirements[1]}}
             pip install ${{requirements[2]}} -f https://software.intel.com/ipex-whl-stable
           fi
           source bigdl-nano-init
