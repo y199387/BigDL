@@ -20,7 +20,6 @@ from typing import Dict
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.plugins.training_type import SingleDevicePlugin, DDPSpawnPlugin
 from bigdl.nano.pytorch.utils import TORCH_VERSION_LESS_1_10
-from pytorch_lightning.accelerators.cpu import CPUAccelerator
 
 
 class CheckIPEXCallback(Callback):
