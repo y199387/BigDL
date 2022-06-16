@@ -98,6 +98,7 @@ class Trainer(pl.Trainer):
                     " without avx512 will crash."
                     "Fall back to regular pytorch.")
             use_ipex = False
+            warning(f"{use_ipex}")
 
         if num_processes == 1:
             if use_ipex:
