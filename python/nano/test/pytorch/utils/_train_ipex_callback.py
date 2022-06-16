@@ -15,7 +15,7 @@
 #
 
 import torch
-import warnings
+from logging import warning
 from typing import Dict
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.plugins.training_type import SingleDevicePlugin, DDPSpawnPlugin
@@ -28,7 +28,7 @@ class CheckIPEXCallback(Callback):
         if TORCH_VERSION_LESS_1_10:
             from bigdl.nano.deps.ipex.version_1_9.ipex_accelerator_1_9 import IPEXAccelerator
             if not isinstance(trainer.accelerator, IPEXAccelerator):
-                warnings.warn("CheckIPEXCallback is used, but ipex fail")
+                warning("CheckIPEXCallback is used, but ipex fail")
                 return
             from bigdl.nano.deps.ipex.version_1_9.ipex_torchfunctional import RESTORE_TYPE
             def check_device(obj):
@@ -48,7 +48,7 @@ class CheckIPEXCallback(Callback):
             from bigdl.nano.deps.ipex.ipex_accelerator import IPEXAccelerator
             from pytorch_lightning.plugins import DDPSpawnPlugin
             if not (isinstance(trainer.accelerator, IPEXAccelerator) or isinstance(trainer.training_type_plugin, DDPSpawnPlugin) and hasattr(trainer.training_type_plugin, 'use_ipex') and trainer.training_type_plugin.use_ipex == True):
-                warnings.warn("CheckIPEXCallback is used, but ipex fail")
+                warning("CheckIPEXCallback is used, but ipex fail")
                 return
             from intel_extension_for_pytorch.nn.utils._model_convert import _LSTM
             from intel_extension_for_pytorch.nn.utils._weight_prepack import _IPEXConvNd, _IPEXLinear, _IPEXConvTransposeNd
