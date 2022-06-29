@@ -34,6 +34,7 @@ dog = data_transform(read_image(paths[1]))
 ```
 Let’s have a quick look at our data<br>
 
+![cat](../Image/cat.jpg)
 <img src="../Image/cat.jpg" width="20%" height="20%" alt="cat" align=center />
 <img src="../Image/dog.jpg" width="20%" height="20%" alt="dog" align=center />
 
