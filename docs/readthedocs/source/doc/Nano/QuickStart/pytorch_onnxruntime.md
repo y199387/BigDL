@@ -34,9 +34,10 @@ dog = data_transform(read_image(paths[1]))
 ```
 Let’s have a quick look at our data<br>
 
-![cat](../Image/cat.jpg)
-<img src="../Image/cat.jpg" width="20%" height="20%" alt="cat" align=center />
-<img src="../Image/dog.jpg" width="20%" height="20%" alt="dog" align=center />
+[](../Image/cat.jpg)
+[](../Image/dog.jpg)
+<img src="../../../_images/cat.jpg" width="20%" height="20%" alt="cat" align=center />
+<img src="../../../_images/dog.jpg" width="20%" height="20%" alt="dog" align=center />
 
 ### **Step 2: Prepare the Model**
 ```python
@@ -76,6 +77,3 @@ ort_predictor(batch)
 ```
 - Note
     `ort_predictor` is not trainable any more, so you can't use like trainer.fit(ort_model, dataloader)
-
-[cat]: <../Image/cat.jpg>
-[dog]: <../Image/dog.jpg>
