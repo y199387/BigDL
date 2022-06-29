@@ -75,3 +75,6 @@ ort_predictor(batch)
 ```
 - Note
     `ort_predictor` is not trainable any more, so you can't use like trainer.fit(ort_model, dataloader)
+
+[cat]: <../Image/cat.jpg>
+[dog]: <../Image/dog.jpg>
