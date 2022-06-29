@@ -34,10 +34,7 @@ dog = data_transform(read_image(paths[1]))
 ```
 Let’s have a quick look at our data<br>
 
-![cat](../Image/cat.jpg =100x66)
-![dog](../Image/dog.jpg =100x66)
-<img src="../../../_images/cat.jpg" width="20%" height="20%" alt="cat" align=center />
-<img src="../../../_images/dog.jpg" width="20%" height="20%" alt="dog" align=center />
+![cat](../Image/cat_small.jpg) ![dog](../Image/dog_small.jpg)
 
 ### **Step 2: Prepare the Model**
 ```python
