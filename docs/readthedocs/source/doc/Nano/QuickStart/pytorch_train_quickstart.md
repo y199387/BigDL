@@ -1,6 +1,6 @@
 # BigDL-Nano PyTorch Training Quickstart
 
-**In this guide we will describe how to scale out PyTorch programs using Nano in 4 simple steps**
+**In this guide we will describe how to scale out PyTorch programs using Nano in 5 simple steps**
 
 ### **Step 0: Prepare Environment**
 
@@ -98,20 +98,20 @@ datamodule = prepare_data(".", 32)
 ### Step 4: Fit with Nano PyTorch Trainer
 ```python
 model = LitResnet(learning_rate=0.05)
-single_trainer = Trainer(max_epochs=1)
+single_trainer = Trainer(max_epochs=5)
 single_trainer.fit(model, datamodule=datamodule)
 ```
 Besides, you can enable optimizations delivered by BigDL-Nano by setting a paramter or calling a method to accelerate PyTorch or PyTorch Lightning application on training workloads.
 - Increase the number of processes in distributed training to accelerate training.
 ```python
-model = LitResnet(learning_rate=0.05)
-single_trainer = Trainer(max_epochs=1, num_processes=4)
+model = LitResnet(learning_rate=0.2)
+single_trainer = Trainer(max_epochs=5, num_processes=4)
 single_trainer.fit(model, datamodule=datamodule)
 ```
 - Intel Extension for Pytorch (a.k.a. IPEX) link extends PyTorch with optimizations for an extra performance boost on Intel hardware. BigDL-Nano integrates IPEX through the Trainer. Users can turn on IPEX by setting use_ipex=True.
 ```python
-model = LitResnet(learning_rate=0.05)
-single_trainer = Trainer(max_epochs=1, num_processes=4, use_ipex=True)
+model = LitResnet(learning_rate=0.2)
+single_trainer = Trainer(max_epochs=5, num_processes=4, use_ipex=True)
 single_trainer.fit(model, datamodule=datamodule)
 ```
 Get more information about the optimizations from [here](https://bigdl.readthedocs.io/en/latest/doc/PythonAPI/Nano/pytorch.html#bigdl-nano-pytorch)
