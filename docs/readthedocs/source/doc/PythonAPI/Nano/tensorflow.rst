@@ -11,4 +11,4 @@ bigdl.nano.tf.keras
 .. autoclass:: bigdl.nano.tf.keras.Sequential
     :members:
     :undoc-members:
-    :autodoc_inherit_docstrings: True
+    :show-inheritance:
