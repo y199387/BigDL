@@ -7,6 +7,13 @@
 
 ---------------------------
 
+- [**BigDL-Nano TensorFlow Training Quickstart**](./tensorflow_train_quickstart.html)
+
+    > ![](../../../../image/GitHub-Mark-32px.png)[View source on GitHub][Nano_tensorflow_training]
+
+    In this guide we will describe how to accelerate TensorFlow Keras applications on training workloads with BigDL-Nano
+
+---------------------------
 - [**BigDL-Nano PyTorch ONNXRuntime Acceleration Quickstart**](./pytorch_onnxruntime.html)
 
     > ![](../../../../image/GitHub-Mark-32px.png)[View source on GitHub][Nano_pytorch_onnxruntime]
@@ -44,6 +51,15 @@
     > ![](../../../../image/GitHub-Mark-32px.png)[View source on GitHub][Nano_pytorch_quantization_openvino]
 
     In this guide we will describe how to obtain a quantized model with the APIs delivered by BigDL-Nano
+
+
+---------------------------
+
+- [**BigDL-Nano TensorFlow Quantization with INC Quickstart**](./tensorflow_quantization_quickstart.html)
+
+    > ![](../../../../image/GitHub-Mark-32px.png)[View source on GitHub][Nano_tensorflow_quantization_INC]
+
+    In this guide we will describe how to obtain a quantized Keras model with the APIs delivered by BigDL-Nano
 
 
 ---------------------------
