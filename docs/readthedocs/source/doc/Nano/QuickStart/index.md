@@ -84,7 +84,7 @@
 
 
 [Nano_pytorch_training]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/pytorch/tutorial/pytorch_train.ipynb>
-[Nano_pytorch_training]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/tensorflow/tutorial/tensorflow_fit.ipynb>
+[Nano_tensorflow_training]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/tensorflow/tutorial/tensorflow_fit.ipynb>
 [Nano_pytorch_onnxruntime]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/pytorch/tutorial/pytorch_inference_onnx.ipynb>
 [Nano_pytorch_openvino]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/pytorch/tutorial/pytorch_inference_openvino.ipynb>
 [Nano_pytorch_Quantization_inc]: <https://github.com/intel-analytics/BigDL/blob/main/python/nano/notebooks/pytorch/tutorial/pytorch_quantization_inc.ipynb>
